@@ -211,7 +211,7 @@ class Menu:
 
         self.color = color
     
-    # Menünün rengini döndüren fonksiyon.
+    # Menünün rengini döndüren method.
     def get_color(self):
         return self.color_dict.get(self.color, 1)
 
