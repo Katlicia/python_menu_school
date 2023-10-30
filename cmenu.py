@@ -211,12 +211,12 @@ class Menu:
 
         self.color = color
     
-    # Menünün rengini döndüren method.
+    # Menünün rengini döndüren metot.
     def get_color(self):
         return self.color_dict.get(self.color, 1)
 
 
-    # Menüyü gösteren method.    
+    # Menüyü gösteren metot.    
     def showMenu(self):
         color_number = self.get_color()
         os.system(f'color {color_number}')
@@ -245,7 +245,7 @@ class Menu:
         print("11- Çıkış\n")
         print("\n" + "*" * 115)
     
-    # Gösterilicek fonksiyonu belirleyen method.
+    # Gösterilicek fonksiyonu belirleyen metot.
     def getMenu(self):
         self.showMenu()
         while True:
@@ -347,4 +347,4 @@ menu_color = input("Menü rengi giriniz. \n(Varsayılan değer mavi olacaktır.)
 
 menu = Menu(menu_color) # Menü objemizi oluşturduk.
 
-menu.getMenu() # Menü objemizden getMenu() methodumuza ulaşıyoruz.  
+menu.getMenu() # Menü objemizden getMenu() metodumuza ulaşıyoruz.  
